@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         selectImageBtn.addTarget(self, action: #selector(ImageBtn), for: UIControl.Event.touchUpInside)
     }
 
+    //Creating Action to this button
     @objc func ImageBtn()
     {
         let pickerController = UIImagePickerController()
