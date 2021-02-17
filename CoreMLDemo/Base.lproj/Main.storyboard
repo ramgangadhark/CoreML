@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-oS-mvZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="545"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="7gR-CA-qco"/>
+                                    <constraint firstAttribute="height" constant="545" id="Zhz-iQ-Lal"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="672-Me-SYa">
+                                <rect key="frame" x="160" y="575" width="94" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DI4-lg-ebh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="folder" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEs-4R-J2t">
+                                <rect key="frame" x="20" y="660" width="374" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="vhl-2B-yDC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dEs-4R-J2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7mM-Fz-RgE"/>
+                            <constraint firstItem="672-Me-SYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="JR9-CC-V5Y"/>
+                            <constraint firstItem="ghs-oS-mvZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fBF-l1-VPV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEs-4R-J2t" secondAttribute="trailing" constant="20" id="gxC-eT-4tx"/>
+                            <constraint firstItem="672-Me-SYa" firstAttribute="top" secondItem="ghs-oS-mvZ" secondAttribute="bottom" constant="30" id="nlC-ie-N26"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="672-Me-SYa" secondAttribute="trailing" constant="160" id="o0y-ba-fob"/>
+                            <constraint firstItem="ghs-oS-mvZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qQy-Uf-yTK"/>
+                            <constraint firstItem="dEs-4R-J2t" firstAttribute="top" secondItem="672-Me-SYa" secondAttribute="bottom" constant="25" id="yAU-pf-clo"/>
+                            <constraint firstItem="ghs-oS-mvZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zaQ-TA-sOR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLbl" destination="dEs-4R-J2t" id="En9-fH-tPW"/>
+                        <outlet property="imgView" destination="ghs-oS-mvZ" id="qrB-lc-pDr"/>
+                        <outlet property="selectImageBtn" destination="672-Me-SYa" id="hg8-Zn-nU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
